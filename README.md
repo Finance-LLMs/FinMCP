@@ -1,1 +1,1 @@
-# Curosr-MCP-Server-Stocks
+# Cursor-MCP-Server-Stocks
