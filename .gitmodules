@@ -1,3 +1,6 @@
 [submodule "Indian-Markets"]
 	path = Indian-Markets
 	url = https://github.com/Finance-LLMs/Indian-Markets
+[submodule "Yahoo-Finance"]
+	path = Yahoo-Finance
+	url = https://github.com/Finance-LLMs/Yahoo-Finance
