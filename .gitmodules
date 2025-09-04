@@ -4,3 +4,6 @@
 [submodule "Yahoo-Finance"]
 	path = Yahoo-Finance
 	url = https://github.com/Finance-LLMs/Yahoo-Finance
+[submodule "Deep-Research"]
+	path = Deep-Research
+	url = https://github.com/Finance-LLMs/deep-research-python
