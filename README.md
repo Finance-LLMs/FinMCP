@@ -1,1 +1,1 @@
-# *Fin*ance *MCP*
+# **Fin**ance **MCP**
