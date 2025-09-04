@@ -7,3 +7,6 @@
 [submodule "Deep-Research"]
 	path = Deep-Research
 	url = https://github.com/Finance-LLMs/deep-research-python
+[submodule "Digital-Persona"]
+	path = Digital-Persona
+	url = https://github.com/Finance-LLMs/Digital-Persona
