@@ -10,3 +10,6 @@
 [submodule "Digital-Persona"]
 	path = Digital-Persona
 	url = https://github.com/Finance-LLMs/Digital-Persona
+[submodule "Upstox-MCP-Server"]
+	path = Upstox-MCP-Server
+	url = https://github.com/Finance-LLMs/Upstox-MCP-Server
