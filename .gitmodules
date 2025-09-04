@@ -1,0 +1,3 @@
+[submodule "Indian-Markets"]
+	path = Indian-Markets
+	url = https://github.com/Finance-LLMs/Indian-Markets
