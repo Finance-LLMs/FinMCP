@@ -1,1 +1,1 @@
-# Cursor-MCP-Server-Stocks
+# *Fin*ance *MCP*
