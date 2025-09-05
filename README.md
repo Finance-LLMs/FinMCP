@@ -10,6 +10,8 @@
 
 FinMCP is a comprehensive suite of interconnected financial AI tools designed to democratize institutional-grade financial analysis. Built on the Model Context Protocol (MCP) framework, it provides seamless integration between AI models and financial data sources, enabling sophisticated analysis, automated trading insights, and specialized AI model development for the financial domain.
 
+Demo Video Link :-  https://drive.google.com/file/d/1sWKAB2K62oUG14YtS5YqEo72Unr9xfq3/view?usp=sharing
+
 ### Key Innovations
 
 - **🔬 Deep Research Engine**: AI-powered iterative research with web scraping and synthesis
