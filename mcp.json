@@ -8,7 +8,7 @@
       ]
     },
     "Stocks": {
-      "command": "/Users/abhay/.local/bin/uv",
+      "command": "uv",
       "args": [
         "run",
         "--with",
@@ -17,11 +17,11 @@
         "yfinance",
         "mcp",
         "run",
-        "/Users/abhay/IIIT-Delhi/MIDAS/MCP/MCP_tools/main.py"
+        "./MCP_tools/main.py"
       ]
     },
     "IndianMarkets": {
-      "command": "/Users/abhay/.local/bin/uv",
+      "command": "uv",
       "args": [
         "run",
         "--with",
@@ -32,27 +32,27 @@
         "nsepython",
         "mcp",
         "run",
-        "/Users/abhay/IIIT-Delhi/MIDAS/MCP/MCP_tools/indian_markets.py"
+        "./MCP_tools/indian_markets.py"
       ]
     },
     "deep-research-python": {
-      "command": "/opt/anaconda3/envs/midas/bin/python3",
+      "command": "python3",
       "args": [
-        "/Users/abhay/IIIT-Delhi/MIDAS/MCP/MCP_tools/Deep_Research/deep-research-python/mcp_deep_research.py"
+        "./MCP_tools/Deep_Research/deep-research-python/mcp_deep_research.py"
       ],
       "env": {
-        "PYTHONPATH": "/Users/abhay/IIIT-Delhi/MIDAS/MCP/MCP_tools/Deep_Research/deep-research-python"
+        "PYTHONPATH": "./MCP_tools/Deep_Research/deep-research-python"
       }
     },
     "Peter Lynch Digital Persona": {
-      "command": "/Users/abhay/.local/bin/uv",
+      "command": "uv",
       "args": [
         "run",
         "--with",
         "mcp[cli]",
         "mcp",
         "run",
-        "/Users/abhay/IIIT-Delhi/MIDAS/MCP/MCP_tools/Digital_Personna/PeterLynchDigitalPersona.py"
+        "./MCP_tools/Digital_Personna/PeterLynchDigitalPersona.py"
       ]
     }
   }
