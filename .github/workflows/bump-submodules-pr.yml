@@ -1,47 +1,47 @@
-name: Bump submodules (PR)
+# name: Bump submodules (PR)
 
-on:
-  workflow_dispatch: {}          # allow manual runs
-  schedule:
-    # Runs at 09:00 IST (03:30 UTC) daily — adjust as you like
-    - cron: "30 3 * * *"
+# on:
+#   workflow_dispatch: {}          # allow manual runs
+#   schedule:
+#     # Runs at 09:00 IST (03:30 UTC) daily — adjust as you like
+#     - cron: "30 3 * * *"
 
-permissions:
-  contents: write
-  pull-requests: write
+# permissions:
+#   contents: write
+#   pull-requests: write
 
-concurrency:
-  group: bump-submodules-pr
-  cancel-in-progress: false
+# concurrency:
+#   group: bump-submodules-pr
+#   cancel-in-progress: false
 
-jobs:
-  bump:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo (with submodules)
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-          # If any submodule is private, replace the next line with:
-          # token: ${{ secrets.REPO_PAT }}
-          # (Create a PAT with 'repo' scope and save it as REPO_PAT in repo secrets.)
+# jobs:
+#   bump:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repo (with submodules)
+#         uses: actions/checkout@v4
+#         with:
+#           submodules: recursive
+#           fetch-depth: 0
+#           # If any submodule is private, replace the next line with:
+#           # token: ${{ secrets.REPO_PAT }}
+#           # (Create a PAT with 'repo' scope and save it as REPO_PAT in repo secrets.)
       
-      - name: Sync submodule config & update to latest tracked branches
-        run: |
-          git submodule sync --recursive
-          git submodule update --init --remote --merge --recursive
+#       - name: Sync submodule config & update to latest tracked branches
+#         run: |
+#           git submodule sync --recursive
+#           git submodule update --init --remote --merge --recursive
 
-      - name: Create PR if there are changes
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "chore(submodules): bump to latest main"
-          title: "chore: bump submodules to latest main"
-          body: |
-            Automated PR to bump all submodules to the latest commit on their tracked `main` branches.
-            Trigger: ${{ github.event_name }}
-          branch: chore/bump-submodules
-          delete-branch: true
-          labels: |
-            chore
-            automation
+#       - name: Create PR if there are changes
+#         uses: peter-evans/create-pull-request@v6
+#         with:
+#           commit-message: "chore(submodules): bump to latest main"
+#           title: "chore: bump submodules to latest main"
+#           body: |
+#             Automated PR to bump all submodules to the latest commit on their tracked `main` branches.
+#             Trigger: ${{ github.event_name }}
+#           branch: chore/bump-submodules
+#           delete-branch: true
+#           labels: |
+#             chore
+#             automation
